@@ -1,0 +1,129 @@
+* {
+    margin: 0 0 0 0;
+    /* background: ; */
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    height: 100vh;
+
+}
+
+.cardBody {
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    width: 26rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.body-headings {
+    /* background-color: antiquewhite; */
+    padding-top: 3.5rem;
+    line-height: 3rem;
+}
+
+.body-title {
+    color: rgb(53, 53, 53);
+}
+
+.body-description {
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-box {
+    font-size: 16px;
+    height: 3rem;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 25px;
+    outline-color: azure;
+}
+
+.btn-login {
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+    height: 12%;
+    font-size: 20px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+
+}
+
+.login-logo {
+    color: white;
+    padding-left: .5rem;
+    transition: 0.3s;
+}
+
+.login-logo:hover {
+    color: rgb(3, 10, 0);
+}
+
+.create-ac {
+    padding-top: 1rem;
+    color: rgb(146, 146, 146);
+    font-size: 14px;
+}
+
+.designed-by{
+    padding-top: 5rem;
+    font-size: 12px;
+    color: rgb(243, 242, 242);
+}
+
+
+
+
+/* Responsive for small devices -----> */
+
+@media only screen and (max-width: 700px) {
+    .cardBody {
+        padding-top: 8rem;
+        border-radius: none;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.8;
+    }
+
+    .btn-login {
+        width: 40%;
+        height: 6%;
+        font-size: 18px;
+        margin-top: 2rem;
+        font-weight: 600;
+
+    }
+
+}
