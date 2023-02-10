@@ -11,7 +11,11 @@ const userName = 'methu';
 const userPassword = '5252';
 
 function functionOne(){
-    if (inputUserName.value === userName || inputPassword === userPassword){
+    if (inputUserName.value === '' && inputPassword.value === ''){
+        warningText.innerText = 'Please enter your credentials.';
+    }
+    
+    else if (inputUserName.value === userName && inputPassword.value === userPassword){
         warningText.innerText = 'Successfully Working!';
     }
     else{
