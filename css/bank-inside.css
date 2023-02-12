@@ -1,0 +1,89 @@
+* {
+    margin: 0 0 0 0;
+}
+
+.cotaniner-head {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    padding: 20px;
+    color: rgb(95, 97, 95);
+}
+
+.transaction-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1rem);
+    gap: 0rem;
+    justify-content: space-evenly;
+}
+
+.transaction-item {
+    /* background-color: rgb(240, 112, 7); */
+    border-radius: 5px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.transaction-item h1 {
+    color: rgb(19, 18, 18);
+    font-size: 40px;
+}
+
+.transaction-item h3 {
+    color: rgb(129, 129, 129);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.transaction-container {
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+    width: 80%;
+    height: 100vh;
+}
+
+/* second part */
+
+.container-two{
+    display: grid;
+    grid-template-columns: repeat(2, 1rem);
+    gap: 30rem;
+    /* justify-content: center; */
+    margin: auto;
+    padding-left: 18rem;
+    padding-top: 5rem;
+}
+
+#deposite-transaction{
+    background-color: rgb(226, 226, 226);
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+#withdraw-transaction{
+    background-color: rgb(226, 226, 226);
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.btn-primary{
+    background-color: rgb(91, 132, 245);
+    color: white;
+    border: none;
+    padding: 8px 5px; 
+    border-radius: 5px;
+    font-size: 18px;    
+}
+
+.btn-primary:hover{
+    background-color: rgb(54, 105, 245);
+    cursor: pointer;
+}
+.input-field{
+    background-color: rgb(207, 207, 207);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+}
