@@ -7,7 +7,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const depositCounterString = depositCounterElement.innerText;
     const previousDepositAmount = parseFloat(depositCounterString);
 
-    depositCounterElement.value = '';
+    depositInputElement.value = '';
     
     if(isNaN(newDepositAmount)){
         alert('Please check your entry!');
