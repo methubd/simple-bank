@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bank-inside.css">
+</head>
+<body>
+    <section class="cotaniner-head">
+        <h1>Let's Start Transaction with Baap er Bank</h1>
+    </section>
+    <section class="transaction-container">
+        <div class="transaction-items">
+            <div class="transaction-item">
+                <h3>Deposit</h3>
+                <h1>$<span id="deposit-counter">00</span> </h1>
+            </div>
+            <div class="transaction-item">
+                <h3>Withdraw</h3>
+                <h1>$<span id="withdraw-counter">00</span> </h1>
+            </div>
+            <div class="transaction-item">
+                <h3>Balance</h3>
+                <h1>$<span id="balance-counter">800</span> </h1>
+            </div>
+        </div>  
+
+        <section class="container-two">
+            <div class="">
+                <div id="deposite-transaction">
+                    <h3>Please Deposite</h3>
+                    <input class="input-field" type="text" name="" id="deposit-amount" placeholder="$ enter your amount">
+                    <button id="btn-deposit" class="btn-primary">Deposit</button>
+                </div>
+            </div>    
+            <div id="withdraw-transaction">
+                <div>
+                    <h3>Withdraw</h3>
+                    <input class="input-field" type="text" name="" id="withdraw-amount" placeholder="$ enter your amount">
+                    <button id="btn-withdraw" class="btn-primary">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+
+</body>
+</html>

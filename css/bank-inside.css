@@ -12,26 +12,29 @@
 .transaction-items {
     display: grid;
     grid-template-columns: repeat(3, 1rem);
-    gap: 0rem;
-    justify-content: space-evenly;
+    gap: 14.2rem;
 }
 
 .transaction-item {
-    /* background-color: rgb(240, 112, 7); */
-    border-radius: 5px;
+    background-color: rgba(211, 206, 203, 0.5);
     margin-top: 5rem;
     text-align: center;
+    width: 15rem;
+    height: 20rem;
+    padding: 8px 5px;
 }
 
 .transaction-item h1 {
-    color: rgb(19, 18, 18);
+    color: rgb(107, 106, 106);
     font-size: 40px;
 }
 
 .transaction-item h3 {
-    color: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+    
     font-size: 15px;
     font-weight: 400;
+    padding-top: 4rem;
 }
 
 .transaction-container {
@@ -47,9 +50,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1rem);
     gap: 30rem;
-    /* justify-content: center; */
     margin: auto;
-    padding-left: 18rem;
+    /* justify-content: center; */
+    width: 50%;
     padding-top: 5rem;
 }
 
