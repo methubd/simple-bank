@@ -1,28 +1,34 @@
 document.getElementById('btn-deposit').addEventListener('click', function(){
-    const depositInputElement = document.getElementById('deposit-input');
-    const depositInputString = depositInputElement.value;
-    const newDepositAmount = parseFloat(depositInputString);
-
-    const depositCounterElement = document.getElementById('deposit-counter');
-    const depositCounterString = depositCounterElement.innerText;
-    const previousDepositAmount = parseFloat(depositCounterString);
-
-    depositInputElement.value = '';
+    const NewDepositAmount = getValueFromInputById('deposit-amount');
+    const PreviousDepositAmount = getValueFromSpanById('deposit-counter');
+    const alerts = document.getElementById('alerts');
+    const alertsContainer = document.getElementById('alertContainer');
+    const btnSumbitNID = document.getElementById('btn-submit-nid');
     
-    if(isNaN(newDepositAmount)){
-        alert('Please check your entry!');
+    if(NewDepositAmount >= 5000){
+        alerts.innerText = 'Please submit your NID, Its a Government Term.';
+        alerts.style.backgroundColor = 'green';
+        alerts.style.color = 'white';
+        alerts.style.borderRadius = '10px';
+        btnSumbitNID.removeAttribute('hidden');
         return;
     }
-    
-    // Adding on Deposit Counter
-    depositCounterElement.innerText = previousDepositAmount + newDepositAmount;
-    
-    const balanceCounterElement = document.getElementById('balance-counter');
-    const balanceCounterString = balanceCounterElement.innerText;
-    const previousBalanceCounter = parseFloat(balanceCounterString);
 
-    // Adding on Balance Counter
-    balanceCounterElement.innerText = previousBalanceCounter + newDepositAmount;
+    else if(isNaN(NewDepositAmount)){
+        alerts.innerText = 'You cant submit a empty amount.'
+        alerts.style.backgroundColor = 'red';
+        alerts.style.color = 'white';
+        alerts.style.borderRadius = '10px';
+        return;
+    }
+    else{
+        alerts.innerText = 'Thank you for banking with us.'
+    }
 
-    
+    const totalDepositAmount = PreviousDepositAmount + NewDepositAmount;    
+    setAnewValue('deposit-counter', totalDepositAmount);
+
+    const previousBalance = getValueFromSpanById ('balance-counter');
+    const currentBalance = NewDepositAmount + previousBalance;
+    setAnewValue('balance-counter', currentBalance);
 })
